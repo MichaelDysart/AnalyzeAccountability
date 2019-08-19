@@ -5,11 +5,11 @@ From: continuumio/miniconda3
 %post
     apt-get update && apt-get -y install git wget
     
-    sudo add-apt-repository ppa:deadsnakes/ppa
-    sudo apt-get update
-    sudo apt-get install python3.6
-    sudo apt-get install python3-pip
-    sudo apt-get install python3.6-dev
+    add-apt-repository ppa:deadsnakes/ppa
+    apt-get update
+    apt-get -y install python3.6
+    apt-get -y install python3-pip
+    apt-get -y install python3.6-dev
     
     /opt/conda/bin/conda install numpy matplotlib scikit-learn
     /opt/conda/bin/pip install pandas
