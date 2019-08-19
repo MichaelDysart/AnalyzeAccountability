@@ -5,6 +5,9 @@ From: continuumio/miniconda3
 %post
     apt-get update && apt-get -y install git wget
     
+    apt-get -y install software-properties-common
+    apt-get update
+    
     add-apt-repository ppa:deadsnakes/ppa
     apt-get update
     apt-get -y install python3.6
